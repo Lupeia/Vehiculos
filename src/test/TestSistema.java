@@ -8,10 +8,6 @@ public class TestSistema {
 
     public static void main (String args[]) {
 
-        //El atributo eficienciaMotor de la clase Vehículo tendrá un valor entre 0.1 y 0.9 (Pueden
-        //agregar validación y excepción para controlar ese dato).
-
-
         Sistema sist = new Sistema();
 
        try {
@@ -26,11 +22,12 @@ public class TestSistema {
             sist.getListasVehiculos().forEach(System.out::println);
             //System.out.println(sist.getListasVehiculos().get(0));
 
+
+
             //System.out.println(sist.toString());
        } catch (Exception e) {
             System.out.println(e);
        }
-
 
         System.out.println("El vehiculo traido es: " + sist.traerVehiculo("Suzuki", "Touring"));
         System.out.println("El vehiculo traido es: " + sist.traerVehiculo("Chevrolet", "Renault"));
